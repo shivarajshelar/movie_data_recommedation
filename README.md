@@ -1,12 +1,12 @@
 # movie_recommedation 
 
-### Example pic of Recommend photo
-
-
+### first Example pic of Recommend photo
 ![Movie Recommender Screenshot](images/demo1.png)
 
+### Second Example pic of Recommend photo
 ![Movie Recommender Screenshot](images/demo2.png)
 
+### Third Example pic of Recommend photo
 ![Movie Recommender Screenshot](images/demo3.png)
 
 
