@@ -45,14 +45,11 @@ pip install -r requirements.txt
 
 ```
 
-using sckit learn
+## How it works
 
-doing the count vector to store data
+First, the **CountVectorizer** method is applied to convert the text data (such as genres, keywords, or movie descriptions) into a numerical format. This creates a "bag of words" representation where each movie is stored as a vector of word counts.  
 
-from sklearn.feature_extraction.text import CountVectorizer
+Next, **cosine similarity** is used to measure how close or similar two movies are based on their text vectors. Movies with higher similarity scores share more common features in their descriptions.  
 
-
-from sklearn.metrics.pairwise import cosine_similarity
-
-to seach top 5 movies on the basis of the similrity
+Finally, for any given movie, the system compares it with all other movies and returns the **top 5 most similar movies** as recommendations.
 
