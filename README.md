@@ -44,6 +44,16 @@ pip install -r requirements.txt
 8. git push -u origin
 
 ```
+## Library are used for this project
+
+1. Pandas
+2. Numpy
+3. scikit-learn
+4. Gradio
+
+
+
+
 
 ## How it works
 
