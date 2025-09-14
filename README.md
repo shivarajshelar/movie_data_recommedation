@@ -51,10 +51,6 @@ pip install -r requirements.txt
 3. scikit-learn
 4. Gradio
 
-
-
-
-
 ## How it works
 
 First, the **CountVectorizer** method is applied to convert the text data (such as genres, keywords, or movie descriptions) into a numerical format. This creates a "bag of words" representation where each movie is stored as a vector of word counts.  
