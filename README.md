@@ -1,14 +1,16 @@
 # movie_recommedation 
 
-### first Example pic of Recommend photo
-![Movie Recommender Screenshot](images/demo1.png)
+### first Example pic of Recommend photo on Local System
+![Movie Recommender Screenshot](images/demo4.png)
 
-### Second Example pic of Recommend photo
-![Movie Recommender Screenshot](images/demo2.png)
+### Second Example pic of Recommend photo local system
+![Movie Recommender Screenshot](images/demo6.png)
 
-### Third Example pic of Recommend photo
-![Movie Recommender Screenshot](images/demo3.png)
+### Third Example pic of Recommend photo AWS instance ec2 system 
+![Movie Recommender Screenshot](images/demo8.png)
 
+### Fourth Example pic of Recommend photo AWS instance ec2 system 
+![Movie Recommender Screenshot](images/demo7.png)
 
 
 
@@ -50,6 +52,47 @@ pip install -r requirements.txt
 2. Numpy
 3. scikit-learn
 4. Gradio
+
+##  Dockerize command file and Push to docker from Local system
+```
+docker build -t mass19/movie_sub .
+
+docker run -p 7860:7860 mass19/movie_sug
+
+docker push mass19/movie_sug:lastest
+
+local machine address --> http://127.0.0.1:7860
+
+```
+
+## AWS EC2 Command to install docker 
+
+```
+Create EC2 instance 
+
+Connect to intance
+
+sudo apt-get update 
+
+sudo apt-get install -y docker.io
+
+sudo systemctl start docker 
+
+sudo systemctl enable docker 
+
+sudo usermode -aG docker $USER  -- give the permission to ec2 for the pull docker images
+
+exit
+
+Restart Connection
+
+docker pull mass19/movie_sug:latest
+
+docker run -p 7860:7860 mass19/movie_sug
+
+http://13.60.85.218:7860/   this is aws ec2 public ip address
+
+```
 
 ## How it works
 
