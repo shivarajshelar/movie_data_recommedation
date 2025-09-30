@@ -94,11 +94,10 @@ http://13.60.85.218:7860/   this is aws ec2 public ip address
 
 ```
 
-## How it works
+## How It Works
 
-First, the **CountVectorizer** method is applied to convert the text data (such as genres, keywords, or movie descriptions) into a numerical format. This creates a "bag of words" representation where each movie is stored as a vector of word counts.  
+Feature Extraction – Uses CountVectorizer to convert movie metadata (genres, keywords, etc.) into a numerical “bag-of-words” representation.
 
-Next, **cosine similarity** is used to measure how close or similar two movies are based on their text vectors. Movies with higher similarity scores share more common features in their descriptions.  
+Similarity Scoring – Computes cosine similarity between movies to measure how closely their text profiles match.
 
-Finally, for any given movie, the system compares it with all other movies and returns the **top 5 most similar movies** as recommendations.
-
+Recommendations – For a selected movie, returns the top five most similar titles, delivering fast and relevant suggestions.
