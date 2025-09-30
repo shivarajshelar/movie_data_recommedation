@@ -46,12 +46,15 @@ pip install -r requirements.txt
 8. git push -u origin main 
 
 ```
-## Library are used for this project
+## Tech & Skills are used for this project
 
 1. Pandas
 2. Numpy
 3. scikit-learn
 4. Gradio
+5. Docker 
+6. AWS EC2 instance
+
 
 ##  Dockerize command file and Push to docker from Local system
 ```
@@ -96,8 +99,10 @@ http://13.60.85.218:7860/   this is aws ec2 public ip address
 
 ## How It Works
 
-Feature Extraction – Uses CountVectorizer to convert movie metadata (genres, keywords, etc.) into a numerical “bag-of-words” representation.
+Feature engineering & NLP: Combined title + overview + genre + cast into a single text field; vectorized with CountVectorizer (max_features=3000, stop_words='english') and computed cosine similarity for recommendations.
 
-Similarity Scoring – Computes cosine similarity between movies to measure how closely their text profiles match.
+Data pipeline: Handled nulls/dupes, extracted year from dates, filtered to 2014–2022, and exported curated dataset.
 
-Recommendations – For a selected movie, returns the top five most similar titles, delivering fast and relevant suggestions.
+App UX: Built an interactive Gradio app (dropdown + slider for k) that returns posters & titles; scraped poster URLs via Requests + BeautifulSoup (Wikipedia fallback image handling).
+
+Production readiness: Packaged with Docker and (optionally) deployed on AWS EC2; added .gitignore and artifact strategy to keep the repo lightweight.
