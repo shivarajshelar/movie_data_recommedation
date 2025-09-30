@@ -37,13 +37,13 @@ pip install -r requirements.txt
 
 4. git remote remove origin
 
-5. git add origin https://github.com/shivarajshelar/movie_data_recommedation.git
+5. git remote add origin https://github.com/shivarajshelar/movie_data_recommedation.git
 
 6. git remote -v
 
 7. git branch -M main
 
-8. git push -u origin
+8. git push -u origin main 
 
 ```
 ## Library are used for this project

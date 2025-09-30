@@ -3,3 +3,7 @@ ml-32m/
 rec_venv/
 
 imdb_movies.csv
+
+similar_movies.pkl
+
+"similar_movies.pkl" 
